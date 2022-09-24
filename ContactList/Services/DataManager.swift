@@ -12,22 +12,23 @@ class DataManager {
     
     let names = [
         "Denis" , "Alex", "Sergay", "Nastya",
-        "Olga", "Anna"
+        "Olga", "Anna", "Georg", "Luba"
     ]
     
     let surnames = [
         "Smith", "Dow", "Isaacson", "Pennyworth",
-        "Jankin", "Butler"
+        "Jankin", "Butler", "Shmelenko", "Fisher"
     ]
     
     let emails = [
-        "jjjj@mail.ru", "aaaa@mail.ru", "eeee@mail.ru",
-        "hhhh@mail.ru", "wwww@mail.ru", "mmmm@mail.ru"
+        "ulala@mail.com", "aaaa@mail.ru", "privet@gmail.com",
+        "hhhh@mail.ru", "wwww@mail.ru", "mmmm@mail.ru",
+        "type@xbox.ru", "cool@outlook.com"
     ]
     
     let phoneNumbers = [
-        "745396026", "145036843", "287185656", "293520954",
-        "562880225", "738594072"
+        "745-396-026", "145-036-843", "287-185-656", "276-44-83",
+        "562-880-225", "738-594-072", "345-44-99", "+7-999-001-44-56"
     ]
     
     private init() {}
