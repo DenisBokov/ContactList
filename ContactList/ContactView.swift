@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContactView: View {
     
-    private let persons = Person.getContactList()
+    let persons: [Person]
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             List(persons, id: \.self) { person in
                 NavigationLink(destination: DetailsPersonInfoView(person: person)) {
                     ContactRowView(person: person)
@@ -25,6 +25,6 @@ struct ContactView: View {
 
 struct ContactView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactView()
+        ContactView(persons: Person.getContactList())
     }
 }

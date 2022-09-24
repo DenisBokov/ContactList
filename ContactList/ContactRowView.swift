@@ -15,7 +15,6 @@ struct ContactRowView: View {
         HStack {
             Text("\(person.fullName)")
                 .frame(width: 300, alignment: .leading)
-//            Spacer()
         }
     }
 }

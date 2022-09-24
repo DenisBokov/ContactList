@@ -11,34 +11,19 @@ struct DetailsPersonInfoView: View {
     let person: Person
     
     var body: some View {
-        NavigationStack {
-            VStack {
+        NavigationView {
+            List {
                 Image(systemName: "person.fill")
                     .resizable()
-                    .frame(width: 120, height: 120)
+                    .frame(width: 120, height: 120, alignment: .center)
                     .padding()
-                VStack {
-                    HStack {
-                        Image(systemName: "phone")
-                            .font(.title)
-                            .padding()
-                        Text(person.phoneNumber)
-                            .font(.title)
-                        Spacer()
-                    }
-                    HStack {
-                        Image(systemName: "tray")
-                            .font(.title)
-                            .padding()
-                        Text(person.email)
-                            .font(.title)
-                        Spacer()
-                    }
-                }
-                Spacer()
+                ImageAndTextView(
+                    phoneNumber: person.phoneNumber,
+                    email: person.email
+                )
+                .font(.headline)
+                .navigationTitle(person.fullName)
             }
-            .padding()
-            .navigationTitle(person.fullName)
         }
     }
 }
