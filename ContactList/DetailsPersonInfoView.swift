@@ -22,8 +22,8 @@ struct DetailsPersonInfoView: View {
                     email: person.email
                 )
                 .font(.headline)
-                .navigationTitle(person.fullName)
             }
+            .navigationTitle(person.fullName)
         }
     }
 }
