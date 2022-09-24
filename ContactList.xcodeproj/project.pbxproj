@@ -11,6 +11,12 @@
 		EFEC5CA628DF0DBC004521B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC5CA528DF0DBC004521B6 /* ContentView.swift */; };
 		EFEC5CA828DF0DBC004521B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEC5CA728DF0DBC004521B6 /* Assets.xcassets */; };
 		EFEC5CAB28DF0DBC004521B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEC5CAA28DF0DBC004521B6 /* Preview Assets.xcassets */; };
+		EFEC5CB228DF1513004521B6 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC5CB128DF1513004521B6 /* ContactView.swift */; };
+		EFEC5CB428DF179E004521B6 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC5CB328DF179E004521B6 /* NumberView.swift */; };
+		EFEC5CB628DF202F004521B6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC5CB528DF202F004521B6 /* Person.swift */; };
+		EFEC5CB828DF207E004521B6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC5CB728DF207E004521B6 /* DataManager.swift */; };
+		EFEC5CBA28DF22CD004521B6 /* DetailsPersonInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC5CB928DF22CD004521B6 /* DetailsPersonInfoView.swift */; };
+		EFEC5CBC28DF610F004521B6 /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC5CBB28DF610F004521B6 /* ContactRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		EFEC5CA528DF0DBC004521B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EFEC5CA728DF0DBC004521B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFEC5CAA28DF0DBC004521B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFEC5CB128DF1513004521B6 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		EFEC5CB328DF179E004521B6 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		EFEC5CB528DF202F004521B6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EFEC5CB728DF207E004521B6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		EFEC5CB928DF22CD004521B6 /* DetailsPersonInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPersonInfoView.swift; sourceTree = "<group>"; };
+		EFEC5CBB28DF610F004521B6 /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,7 @@
 		EFEC5C9728DF0DBC004521B6 = {
 			isa = PBXGroup;
 			children = (
+				EFEC5CBB28DF610F004521B6 /* ContactRowView.swift */,
 				EFEC5CA228DF0DBC004521B6 /* ContactList */,
 				EFEC5CA128DF0DBC004521B6 /* Products */,
 			);
@@ -53,6 +66,11 @@
 			children = (
 				EFEC5CA328DF0DBC004521B6 /* ContactListApp.swift */,
 				EFEC5CA528DF0DBC004521B6 /* ContentView.swift */,
+				EFEC5CB328DF179E004521B6 /* NumberView.swift */,
+				EFEC5CB128DF1513004521B6 /* ContactView.swift */,
+				EFEC5CB928DF22CD004521B6 /* DetailsPersonInfoView.swift */,
+				EFEC5CB528DF202F004521B6 /* Person.swift */,
+				EFEC5CB728DF207E004521B6 /* DataManager.swift */,
 				EFEC5CA728DF0DBC004521B6 /* Assets.xcassets */,
 				EFEC5CA928DF0DBC004521B6 /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFEC5CB628DF202F004521B6 /* Person.swift in Sources */,
+				EFEC5CB828DF207E004521B6 /* DataManager.swift in Sources */,
 				EFEC5CA628DF0DBC004521B6 /* ContentView.swift in Sources */,
+				EFEC5CB228DF1513004521B6 /* ContactView.swift in Sources */,
 				EFEC5CA428DF0DBC004521B6 /* ContactListApp.swift in Sources */,
+				EFEC5CBA28DF22CD004521B6 /* DetailsPersonInfoView.swift in Sources */,
+				EFEC5CBC28DF610F004521B6 /* ContactRowView.swift in Sources */,
+				EFEC5CB428DF179E004521B6 /* NumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
