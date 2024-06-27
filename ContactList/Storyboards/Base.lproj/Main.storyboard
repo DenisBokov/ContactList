@@ -37,7 +37,7 @@
             </objects>
             <point key="canvasLocation" x="-416" y="56"/>
         </scene>
-        <!--Item 1-->
+        <!--Person List View Controller-->
         <scene sceneID="bJ5-Wg-v2P">
             <objects>
                 <viewController id="4Lb-iv-JUv" customClass="PersonListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,6 +60,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="4Lb-iv-JUv" id="fmt-bR-NGF"/>
+                                    <outlet property="delegate" destination="4Lb-iv-JUv" id="JAS-x6-lz7"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -72,11 +73,11 @@
                             <constraint firstItem="VN3-9F-oRh" firstAttribute="top" secondItem="c1D-Tu-teO" secondAttribute="top" id="lSp-CJ-8vl"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="CDf-rh-V3n"/>
+                    <navigationItem key="navigationItem" id="fC0-sd-RSw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAx-YL-TvU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-416.03053435114504" y="-756.33802816901414"/>
+            <point key="canvasLocation" x="335" y="-756"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="k16-tf-Bif">
@@ -88,7 +89,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="4Lb-iv-JUv" kind="relationship" relationship="viewControllers" id="Fqf-VA-KYr"/>
+                        <segue destination="v2J-ay-kMh" kind="relationship" relationship="viewControllers" id="Fqf-VA-KYr"/>
                         <segue destination="sSy-q5-7Ul" kind="relationship" relationship="viewControllers" id="MvY-Ng-LId"/>
                     </connections>
                 </tabBarController>
@@ -96,8 +97,28 @@
             </objects>
             <point key="canvasLocation" x="-1320" y="-304"/>
         </scene>
+        <!--Contacts-->
+        <scene sceneID="jHT-cf-AkO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v2J-ay-kMh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle.fill" catalog="system" id="CDf-rh-V3n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IvZ-8t-8DD">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Lb-iv-JUv" kind="relationship" relationship="rootViewController" id="deg-Mc-FUC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iFG-Zh-Uoj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-416.03053435114504" y="-756.33802816901414"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
