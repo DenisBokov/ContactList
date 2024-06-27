@@ -8,6 +8,7 @@
 import UIKit
 
 class PersonListViewController: UIViewController {
+    var personList = Person.getPersonContact()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,12 +17,15 @@ class PersonListViewController: UIViewController {
 
 extension PersonListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        personList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactList", for: indexPath)
-        cell.textLabel?.text = "Cell index: \(indexPath.row)"
+        let person = personList[indexPath.row]
+        var content = cell.defaultContentConfiguration()
+        content.text = person.fullName
+        cell.contentConfiguration = content
         return cell
     }
 }
