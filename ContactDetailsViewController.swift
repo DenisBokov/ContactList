@@ -9,10 +9,11 @@ import UIKit
 
 class ContactDetailsViewController: UIViewController {
 
+    @IBOutlet var emailLabel: UILabel!
+    @IBOutlet var phoneNamberLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 
