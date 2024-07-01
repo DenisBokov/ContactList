@@ -8,10 +8,19 @@
 import UIKit
 
 class PersonListViewController: UIViewController {
+    
+    @IBOutlet var tableView: UITableView!
+    
     var personList = Person.getPersonContact()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let contactDetailsVC = segue.destination as? ContactDetailsViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        contactDetailsVC.person = personList[indexPath.row]
     }
 }
 
