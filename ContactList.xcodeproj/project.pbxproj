@@ -14,6 +14,8 @@
 		EF72B9B42C2C686200F8D1F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF72B9B32C2C686200F8D1F7 /* Assets.xcassets */; };
 		EF72B9B72C2C686200F8D1F7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EF72B9B62C2C686200F8D1F7 /* Base */; };
 		EF72B9C52C2C6DB400F8D1F7 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF72B9C42C2C6DB400F8D1F7 /* DataStore.swift */; };
+		EF72B9C72C2D7E4600F8D1F7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF72B9C62C2D7E4600F8D1F7 /* Person.swift */; };
+		EF72B9C92C32ACF100F8D1F7 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF72B9C82C32ACF100F8D1F7 /* ContactDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		EF72B9B62C2C686200F8D1F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF72B9B82C2C686200F8D1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF72B9C42C2C6DB400F8D1F7 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		EF72B9C62C2D7E4600F8D1F7 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EF72B9C82C32ACF100F8D1F7 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 		EF72B99E2C2C686100F8D1F7 = {
 			isa = PBXGroup;
 			children = (
+				EF72B9C82C32ACF100F8D1F7 /* ContactDetailsViewController.swift */,
 				EF72B9A92C2C686100F8D1F7 /* ContactList */,
 				EF72B9A82C2C686100F8D1F7 /* Products */,
 			);
@@ -71,6 +76,7 @@
 		EF72B9BE2C2C6A3300F8D1F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EF72B9C62C2D7E4600F8D1F7 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,7 +195,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF72B9C72C2D7E4600F8D1F7 /* Person.swift in Sources */,
 				EF72B9AF2C2C686100F8D1F7 /* PersonListViewController.swift in Sources */,
+				EF72B9C92C32ACF100F8D1F7 /* ContactDetailsViewController.swift in Sources */,
 				EF72B9C52C2C6DB400F8D1F7 /* DataStore.swift in Sources */,
 				EF72B9AB2C2C686100F8D1F7 /* AppDelegate.swift in Sources */,
 				EF72B9AD2C2C686100F8D1F7 /* SceneDelegate.swift in Sources */,
