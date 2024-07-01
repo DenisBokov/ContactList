@@ -46,7 +46,6 @@
 		EF72B99E2C2C686100F8D1F7 = {
 			isa = PBXGroup;
 			children = (
-				EF72B9C82C32ACF100F8D1F7 /* ContactDetailsViewController.swift */,
 				EF72B9A92C2C686100F8D1F7 /* ContactList */,
 				EF72B9A82C2C686100F8D1F7 /* Products */,
 			);
@@ -85,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				EF72B9AE2C2C686100F8D1F7 /* PersonListViewController.swift */,
+				EF72B9C82C32ACF100F8D1F7 /* ContactDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

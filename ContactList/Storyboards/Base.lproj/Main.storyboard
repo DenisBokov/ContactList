@@ -86,6 +86,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Contacts" largeTitleDisplayMode="always" id="fC0-sd-RSw"/>
+                    <connections>
+                        <outlet property="tableView" destination="VN3-9F-oRh" id="Qtf-yt-zHv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAx-YL-TvU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
