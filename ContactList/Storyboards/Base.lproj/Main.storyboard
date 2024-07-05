@@ -9,33 +9,45 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Contacts-->
         <scene sceneID="hck-nY-wgN">
             <objects>
-                <viewController id="sSy-q5-7Ul" sceneMemberID="viewController">
+                <viewController id="sSy-q5-7Ul" customClass="FullContactsViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XKE-jb-25a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hM-3l-j0w">
-                                <rect key="frame" x="106" y="256.5" width="108" height="55"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4v5-Y6-j0I">
+                                <rect key="frame" x="0.0" y="0.0" width="327" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RRB-XB-Zjj">
+                                        <rect key="frame" x="0.0" y="50" width="327" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RRB-XB-Zjj" id="whC-rv-y7F">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="sSy-q5-7Ul" id="MEj-XN-xck"/>
+                                    <outlet property="delegate" destination="sSy-q5-7Ul" id="emP-gB-DQC"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Cf5-cW-ys1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="7hM-3l-j0w" firstAttribute="centerY" secondItem="XKE-jb-25a" secondAttribute="centerY" id="5Rm-JV-bSd"/>
-                            <constraint firstItem="7hM-3l-j0w" firstAttribute="centerX" secondItem="XKE-jb-25a" secondAttribute="centerX" id="6zN-LP-i35"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="sa9-EK-DJk"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle.fill" catalog="system" id="sa9-EK-DJk"/>
+                    <connections>
+                        <outlet property="tableView" destination="4v5-Y6-j0I" id="iEn-mp-vfO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tR2-GB-AC4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-416" y="56"/>
+            <point key="canvasLocation" x="-416.25" y="55.985915492957744"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="bJ5-Wg-v2P">
@@ -102,20 +114,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gCm-Zm-mdp">
-                                <rect key="frame" x="16" y="163" width="175" height="89"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="gCm-Zm-mdp">
+                                <rect key="frame" x="16" y="163" width="288" height="134"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="z25-O4-EI4">
-                                        <rect key="frame" x="0.0" y="0.0" width="125.5" height="89"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="125.5" height="134"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwA-yB-72f">
-                                                <rect key="frame" x="0.0" y="0.0" width="48" height="21.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwA-yB-72f">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="66.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8x-oz-H8m">
-                                                <rect key="frame" x="0.0" y="67.5" width="125.5" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="112.5" width="125.5" height="21.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="125.5" id="70y-Dq-H0N"/>
                                                 </constraints>
@@ -126,10 +138,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="rip-2J-fVy">
-                                        <rect key="frame" x="133.5" y="0.0" width="41.5" height="89"/>
+                                        <rect key="frame" x="162.5" y="0.0" width="125.5" height="134"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2z-wA-4Yz">
-                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="22.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2z-wA-4Yz">
+                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="67.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="E2z-wA-4Yz" secondAttribute="height" multiplier="41:22" id="hKy-BV-zvb"/>
                                                 </constraints>
@@ -137,8 +149,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSO-Mh-hTN">
-                                                <rect key="frame" x="0.0" y="68.5" width="41.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSO-Mh-hTN">
+                                                <rect key="frame" x="0.0" y="113.5" width="125.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -153,6 +165,7 @@
                         <constraints>
                             <constraint firstItem="gCm-Zm-mdp" firstAttribute="leading" secondItem="r9Y-dF-UZg" secondAttribute="leading" constant="16" id="LPt-oW-O68"/>
                             <constraint firstItem="gCm-Zm-mdp" firstAttribute="top" secondItem="r9Y-dF-UZg" secondAttribute="top" constant="50.5" id="kNB-dM-iPh"/>
+                            <constraint firstItem="r9Y-dF-UZg" firstAttribute="trailing" secondItem="gCm-Zm-mdp" secondAttribute="trailing" constant="16" id="m8l-fz-3lA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Contact Details" id="8kR-Bh-V66"/>
@@ -163,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q9I-aW-u1u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1085" y="-756"/>
+            <point key="canvasLocation" x="1083.75" y="-756.33802816901414"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="k16-tf-Bif">
@@ -187,7 +200,7 @@
         <scene sceneID="jHT-cf-AkO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v2J-ay-kMh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle.fill" catalog="system" id="CDf-rh-V3n"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle" catalog="system" id="CDf-rh-V3n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="IvZ-8t-8DD">
                         <rect key="frame" x="0.0" y="20" width="320" height="92.5"/>
@@ -204,6 +217,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
