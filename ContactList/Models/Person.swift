@@ -19,26 +19,23 @@ struct Person {
     static func getPersonContact() -> [Person] {
         
         var persons: [Person] = []
-        var uniquePersons: [Person] = []
-        let count = 100
+    
+        let firstNames = DataStore.shared.firstNames.shuffled()
+        let lastNames = DataStore.shared.lastNames.shuffled()
+        let emails = DataStore.shared.emails.shuffled()
+        let phoneNumbers = DataStore.shared.telephoneNumbers.shuffled()
         
-        for _ in 0...count {
-            persons.append(Person(
-                firstName: DataStore().firstNames.randomElement() ?? "",
-                lastName: DataStore().lastNames.randomElement() ?? "",
-                email: DataStore().emails.randomElement() ?? "",
-                phoneNumber: DataStore().telephoneNumbers.randomElement() ?? "")
+        for index in 0..<firstNames.count {
+            let person = Person(
+                firstName: firstNames[index],
+                lastName: lastNames[index],
+                email: emails[index],
+                phoneNumber: phoneNumbers[index]
             )
+            
+            persons.append(person)
         }
         
-        for person in persons {
-            if !uniquePersons.contains(where: { $0.firstName == person.firstName }) {
-                uniquePersons.append(person)
-            }
-        }
-
-        
-        
-        return uniquePersons
+        return persons
     }
 }
