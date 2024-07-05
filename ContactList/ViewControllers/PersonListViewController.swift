@@ -12,10 +12,6 @@ class PersonListViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     var persons: [Person] = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let contactDetailsVC = segue.destination as? ContactDetailsViewController else { return }

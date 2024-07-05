@@ -13,11 +13,6 @@ class FullContactsViewController: UIViewController {
     
     var persons: [Person] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-    }
 }
 
 extension FullContactsViewController: UITableViewDataSource {
@@ -37,10 +32,17 @@ extension FullContactsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell =  tableView.dequeueReusableCell(withIdentifier: "fullVisionContacts", for: indexPath)
-        let person = persons[indexPath.row]
+        let person = persons[indexPath.section]
         var content = cell.defaultContentConfiguration()
-        content.text = person.email
-        content.secondaryText = person.phoneNumber
+        
+        if indexPath.row == 0 {
+            content.text = person.email
+            content.image = UIImage(systemName: "tray.circle.fill")
+        } else {
+            content.text = person.phoneNumber
+            content.image = UIImage(systemName: "phone.circle.fill")
+        }
+        
         cell.contentConfiguration = content
         
         return cell
