@@ -11,7 +11,7 @@ class FullContactsViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    private var persons = Person.getPersonContact()
+    var persons: [Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
